@@ -71,3 +71,6 @@ def accuracy(output, labels):
     correct = correct.sum()
     return correct / len(labels)
 
+
+def where(cond, x1, x2):
+    return (cond * x1) + (1 - cond) * x2
